@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -69,6 +69,10 @@ body a:hover,
 body a:active {
   text-decoration: none;
   color: #990000;
+}
+
+strong {
+  font-weight: 600;
 }
 
 main {
@@ -138,6 +142,20 @@ main {
   width: 60%;
 }
 
+.content.content-sub-page.festivals {
+  width: 71%;
+  height: auto;
+}
+
+.content.content-sub-page.photos {
+  width: 74%;
+  height: auto;
+}
+
+.content.content-sub-page.festivals p {
+  padding-left: 0;
+}
+
 .content.content-sub-page .heading {
   margin-bottom: 20px;
 }
@@ -146,6 +164,20 @@ main {
   padding-left: 15px;
   font-size: 12px;
   line-height: 1.4;
+}
+
+td {
+  padding-bottom: 10px;
+}
+
+td.left {
+  width: 30%;
+  font-weight: 600;
+}
+
+.two-column-table td {
+  line-height: 1.3;
+  padding-bottom: 0;
 }
 
 .content nav {
@@ -178,6 +210,52 @@ main {
   margin: 0 auto;
 }
 
+.gallery {
+  margin-bottom: 20px;
+}
+
+.gallery figure {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+
+.gallery figure img {
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+
+.gallery figure figcaption {
+  text-align: center;
+  font-size: 12px;
+}
+
+.gallery figure:first-child {
+  width: 21%;
+}
+
+.gallery figure:nth-child(2) {
+  width: 20%;
+}
+
+.gallery figure:nth-child(3) {
+  width: 22%;
+}
+
+.gallery figure:last-child {
+  width: 30%;
+}
+
+.gallery.just-images img {
+  margin: 0 10px 20px;
+  max-width: 200px;
+  vertical-align: top;
+}
+
+.photo-download {
+  text-align: center;
+}
+
 .copyright {
   position: absolute;
   left: 20px;
@@ -204,7 +282,8 @@ main {
 
   .content-wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    align-content: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     height: 100vh;
@@ -225,7 +304,6 @@ main {
 
   .content {
     width: 100%;
-    flex-grow: 2;
     height: auto;
     position: relative;
     top: 0;
@@ -244,9 +322,34 @@ main {
     width: 100%;
     height: auto;
     position: relative;
-    top: 0;
-    left: 0;
+    top: inherit;
+    left: inherit;
   }
+
+  .content.content-sub-page.festivals {
+    width: 100%;
+    font-size: 14px;
+    position: relative;
+    top: inherit;
+    left: inherit;
+    height: auto;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    line-height: 1.4;
+  }
+
+  td strong {
+    display: block;
+  }
+
+  td.left {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
 
   .content.content-sub-page .heading {
     max-width: 100%;
@@ -271,10 +374,34 @@ main {
     margin-bottom: 20px;
   }
 
+  .gallery figure,
+  .gallery figure:first-child,
+  .gallery figure:nth-child(2),
+  .gallery figure:nth-child(3),
+  .gallery figure:last-child {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+
+  .gallery figure figcaption {
+    text-align: left;
+  }
+
+  .gallery.just-images {
+    text-align: center;
+  }
+
+  .gallery.just-images img {
+    margin: 0 10px 20px;
+    max-width: 200px;
+    vertical-align: top;
+  }
+
   .copyright {
     position: relative;
-    bottom: 0;
-    left: 0;
+    bottom: inherit;
+    left: inherit;
     text-align: center;
+    padding-bottom: 20px;
   }
 }
