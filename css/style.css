@@ -82,6 +82,48 @@ main {
   position: relative;
 }
 
+.banner {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 46px;
+  width: 98%;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #FFF;
+}
+
+.banner-content {
+  border: 1px solid #EFB949;
+  padding: 5px 2px 2px 2px;
+}
+
+.banner-content h2, h3 {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-weight: 600;
+}
+
+.banner-content h2 {
+  font-size: 26px;
+}
+
+.banner-content h2 sup {
+  font-size: 50%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.65em;
+}
+
+.banner-content h3 {
+  font-size: 15px;
+}
+
 .content {
   width: 231px;
   height: 279px;
@@ -136,6 +178,14 @@ main {
   margin: 0 auto;
 }
 
+.copyright {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 @media (max-width: 700px) {
   body {
     font-size: 100%;
@@ -155,7 +205,18 @@ main {
   .content-wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     height: 100vh;
+  }
+
+  .banner {
+    position: relative;
+    width: 93%;
+    height: auto;
+    left: inherit;
+    top: inherit;
+    transform: translateX(0);
   }
 
   .content-background {
@@ -164,6 +225,7 @@ main {
 
   .content {
     width: 100%;
+    flex-grow: 2;
     height: auto;
     position: relative;
     top: 0;
@@ -207,5 +269,12 @@ main {
   .content .logo {
     display: block;
     margin-bottom: 20px;
+  }
+
+  .copyright {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
   }
 }
