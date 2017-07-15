@@ -90,6 +90,22 @@ main {
   left: 160px;
 }
 
+.content.content-sub-page {
+  top: 170px;
+  left: 175px;
+  width: 60%;
+}
+
+.content.content-sub-page .heading {
+  margin-bottom: 20px;
+}
+
+.content.content-sub-page p {
+  padding-left: 15px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
 .content nav {
   display: none;
   text-transform: uppercase;
@@ -104,6 +120,10 @@ main {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 20px;
+}
+
+.content nav li a.active {
+  border-bottom: 2px solid #990000;
 }
 
 .content p {
@@ -156,6 +176,18 @@ main {
     border-radius: 20px;
     border: 3px solid #ECBC4C;
     box-shadow: 0 0 0 3px #000;
+  }
+
+  .content.content-sub-page {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .content.content-sub-page .heading {
+    max-width: 100%;
   }
 
   .content nav {
