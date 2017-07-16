@@ -292,10 +292,6 @@ td.left {
     transform: translate(0, 0);
   }
 
-  map {
-    display: none;
-  }
-
   .content-wrapper {
     display: flex;
     align-items: flex-start;
