@@ -152,6 +152,15 @@ main {
   height: auto;
 }
 
+.content.content-sub-page.photos p {
+  margin-bottom: 0;
+}
+
+.content.content-sub-page.photos p.photo-download {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .content.content-sub-page.festivals p {
   padding-left: 0;
 }
@@ -161,7 +170,7 @@ main {
 }
 
 .content.content-sub-page p {
-  padding-left: 15px;
+  padding-left: 2px;
   font-size: 12px;
   line-height: 1.4;
 }
@@ -246,14 +255,14 @@ td.left {
   width: 30%;
 }
 
+.gallery.just-images {
+  margin-bottom: 0;
+}
+
 .gallery.just-images img {
   margin: 0 10px 20px;
   max-width: 200px;
   vertical-align: top;
-}
-
-.photo-download {
-  text-align: center;
 }
 
 .copyright {
@@ -262,6 +271,13 @@ td.left {
   bottom: 0;
   font-size: 10px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.copyright a,
+.copyright a:link,
+.copyright a:hover,
+.copyright a:visited {
+  color: #CCC;
 }
 
 @media (max-width: 700px) {
@@ -316,6 +332,16 @@ td.left {
     border-radius: 20px;
     border: 3px solid #ECBC4C;
     box-shadow: 0 0 0 3px #000;
+  }
+
+  .content .heading {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .content .sub-heading {
+    margin: 0 auto 10px;
+    display: block;
   }
 
   .content.content-sub-page {
