@@ -142,6 +142,11 @@ main {
   width: 60%;
 }
 
+.content.content-sub-page.content-sub-page-oscars {
+  width: 71%;
+  height: auto;
+}
+
 .content.content-sub-page.festivals {
   width: 71%;
   height: auto;
@@ -263,6 +268,14 @@ td.left {
   margin: 0 10px 20px;
   max-width: 200px;
   vertical-align: top;
+}
+
+.gallery.just-images img.tall {
+  max-height: 200px;
+}
+
+.content-sub-page-oscars .gallery.just-images img {
+  margin: 0 5px 10px;
 }
 
 .copyright {
