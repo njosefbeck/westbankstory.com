@@ -20,6 +20,7 @@
   <meta name="twitter:image:alt" content="West Bank Story">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
 
   <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -61,9 +62,9 @@
         <img class="heading" src="./images/headings/oscars.gif" alt="Oscars" />
 
         <div class="gallery just-images">
-          <a href="./images/photos/oscars6.jpg" target="_blank"><img src="./images/photos/oscars6.jpg" alt="Oscars Photo 6" /></a>
-          <a href="./images/photos/oscars7.jpg" target="_blank"><img class="tall" src="./images/photos/oscars7.jpg" alt="Oscars Photo 7" /></a>
-          <a href="./images/photos/oscars8.jpg" target="_blank"><img class="tall" src="./images/photos/oscars8.jpg" alt="Oscars Photo 8" /></a>
+          <a data-fancybox="gallery" href="./images/photos/oscars6.jpg"><img src="./images/photos/oscars6.jpg" alt="Oscars Photo 6" /></a>
+          <a data-fancybox="gallery" href="./images/photos/oscars7.jpg"><img class="tall" src="./images/photos/oscars7.jpg" alt="Oscars Photo 7" /></a>
+          <a data-fancybox="gallery" href="./images/photos/oscars8.jpg"><img class="tall" src="./images/photos/oscars8.jpg" alt="Oscars Photo 8" /></a>
         </div>
       </div>
 
@@ -72,5 +73,11 @@
       </div>
     </div>
   </main>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
 </body>
 </html>
